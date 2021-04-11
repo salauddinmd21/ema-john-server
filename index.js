@@ -48,7 +48,5 @@ app.get('/', (req, res) => {
   res.send('Hello Ema Watson')
 })
 
-app.listen(port, ()=>{
-    console.log('listening port 400')
-})
+app.listen(process.env.PORT || port,)
  
